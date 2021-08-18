@@ -1,1 +1,12 @@
 /* Write your CSS Here. */
+#submit-button {
+    display: block;
+}
+
+#answer-input {
+    margin: 10px 0px;
+}
+
+#scores-div {
+    margin: 10px 0px;
+}
