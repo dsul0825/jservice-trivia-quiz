@@ -10,3 +10,7 @@
 #scores-div {
     margin: 10px 0px;
 }
+
+#end-game {
+    display: none;
+}
