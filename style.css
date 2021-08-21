@@ -14,3 +14,7 @@
 #end-game {
     display: none;
 }
+
+#correctAnswer {
+    display: none;
+}

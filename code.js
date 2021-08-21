@@ -31,7 +31,7 @@ getData()
 let startButton = document.getElementById('start-button')
 let categoriesDiv = document.getElementById('categories-div')
 let questionDiv = document.getElementById('question-div')
-let correctAnswerDiv = document.getElementById('correctAnswer-div')
+let correctAnswerH1 = document.getElementById('correctAnswer')
 let scoresDiv = document.getElementById('scores-div')
 let answerInput = document.getElementById('answer-input')
 let answer = ""
@@ -61,11 +61,13 @@ function checkAnswer() {
     if (answer.toLowerCase() === usersAnswer.toLowerCase()) {
         score += 1
         scoresDiv.innerText = `Score: ${score}`
+        correctAnswerH1.style.display = "block" 
         document.getElementById('answer-field').reset();
         startGame()
         
     } else { 
-      endGameH1.style.display = "block" 
+      endGameH1.style.display = "block"
+      correctAnswerH1.style.display = "none"
       score = 0
       scoresDiv.innerText = `Score: ${score}`
       document.getElementById('answer-field').reset();
