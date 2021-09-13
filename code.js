@@ -1,8 +1,3 @@
-// To run this assignment, right click on index.html in the Visual Studio Code file explorer to the left
-// and select "Open with Live Server"
-
-// YOUR CODE HERE!    
-
 let clues = []
 function getData() {
     fetch('https://jservice.io/api/random')
@@ -78,6 +73,7 @@ function checkAnswer() {
 submitButton.addEventListener("click", checkAnswer)
 
 // playAgain
+
 function playAgain() {
     startGame()
     endGameH1.style.display = "none"
